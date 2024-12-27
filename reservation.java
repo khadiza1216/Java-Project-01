@@ -63,3 +63,24 @@ System.out.println("updated successfully");
 }
 }
 
+
+class Main{
+public static void main(String[] args) {
+    
+
+    resortreservation r1 = new resortreservation("khadiza", "ab3748", LocalDate.now(), "d47");
+    r1.checkreservation();
+    System.out.println();
+    r1.modifyreservation("fatema",LocalDate.of(2024, 12, 25),"A22");
+    r1.checkreservation();
+    System.out.println();
+
+
+    railwayreservation r2 = new railwayreservation("akbar", "cd456", LocalDate.now(), "w19" );
+    r2.checkreservation();
+    System.out.println();
+    r2.modifyreservation("joynal",LocalDate.of(2024, 12, 26),"c22");
+    r2.checkreservation();
+    System.out.println();
+}
+}
